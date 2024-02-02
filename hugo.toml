@@ -1,0 +1,106 @@
+baseURL = "http://mkramerpsych.com"
+languageCode = "en-us"
+theme = "poison"
+paginate = 10
+pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+
+# NOTE: If using Disqus as commenting engine, uncomment and configure this line
+# disqusShortname = "yourDisqusShortname"
+
+[params]
+    brand = "Max Kramer"                      # name of your site - appears in the sidebar
+    # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
+    brand_image = "/images/pro_image_sq.png"    # path to the image shown in the sidebar
+    description = "Data science, cognitive neuroscience, and audio engineering" # Used as default meta description if not specified in front matter
+    dark_mode = true                      # optional - defaults to false
+    favicon = "/favicon/favicon.ico"             # path to favicon (defaults to favicon.png)
+
+    front_page_content = ["Posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
+
+    # MENU PLACEHOLDER
+    # Menu dict keys:
+        # Name:         The name to display on the menu.
+        # URL:          The directory relative to the content directory.
+        # HasChildren:  If the directory's files should be listed.  Default is true.
+        # Limit:        If the files should be listed, how many should be shown.
+    menu = [
+        {Name = "About", URL = "/about/", HasChildren = false},
+        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+    ]
+
+    # Links to your socials.  Comment or delete any you don't need/use. 
+    # discord_url = "https://discord.com"
+    email_url = "mailto://mkramer@mkramerpsych.com"
+    facebook_url = "https://facebook.com/mkpsyx"
+    # flickr_url = "https://flickr.com"
+    github_url = "https://github.com/MkramerPsych"
+    # gitlab_url = "https://gitlab.com"
+    # instagram_url = "https://instagram.com"
+    linkedin_url = "https://linkedin.com/max-kramer-8a953b158"
+    # mastodon_url = "https://mastodon.social"
+    # matrix_url = "https://matrix.org"
+    # telegram_url = "https://telegram.org"
+    # tryhackme_url = "https://tryhackme.com"
+    twitter_url = "https://twitter.com/mkpsyx"
+    # xmpp_url = "https://xmpp.org"
+    # youtube_url = "https://youtube.com"
+
+    # NOTE: If you don't want to use RSS, comment or delete the following lines
+    # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
+    rss_icon = false
+    # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
+    rss_section = "posts"
+
+    # Hex colors for your sidebar.
+    moon_sun_background_color = "#494D64"   # default is #515151
+    moon_sun_color = "#EE99A0"              # default is #FFF
+    sidebar_a_color = "#B7BDF8"             # default is #FFF
+    sidebar_bg_color = "#181926"            # default is 
+    sidebar_h1_color = "#A5ADCB"            # default is #FFF
+    sidebar_img_border_color = "#EE99A0"    # default is #515151
+    sidebar_p_color = "#CAD3F5"             # default is #909090
+    sidebar_socials_color = "#8AADF4"       # default is #FFF
+
+    # Hex colors for your content in light mode.
+    code_color = "#4C4F69"                  # default is #000
+    code_background_color = "#E6E9EF"       # default is #E5E5E5
+    code_block_color = "#4C4F69"            # default is #FFF
+    code_block_background_color = "#CCD0DA" # default is #272822
+    content_bg_color = "#EFF1F5"            # default is #FAF9F6
+    date_color = "#4C4F69"                  # default is #515151
+    link_color = "#7287FD"                  # default is #268BD2
+    list_color = "#4C4F69"                  # default is #5A5A5A
+    post_title_color = "#4C4F69"            # default is #303030
+    table_border_color = "#4C4F69"          # default is #E5E5E5
+    table_stripe_color = "#E6E9EF"          # default is #F9F9F9
+    text_color = "#4C4F69"                  # default is #222
+
+    # Hex colors for your content in dark mode
+    code_color_dark = "#CAD3F5"                     # default is #FFF
+    code_background_color_dark = "#1E2030"          # default is #515151
+    code_block_color_dark = "#F4DBD6"               # default is #FFF
+    code_block_background_color_dark = "#1E2030"    # default is #272822
+    content_bg_color_dark = "#24273A"               # default is #121212
+    date_color_dark = "#CAD3F5"                     # default is #9A9A9A
+    link_color_dark = "#B7BDF8"                     # default is #268BD2
+    list_color_dark = "#CAD3F5"                     # default is #9D9D9D
+    post_title_color_dark = "#CAD3F5"               # default is #DBE2E9
+    table_border_color_dark = "#CAD3F5"             # default is #515151
+    table_stripe_color_dark = "#1E2030"             # default is #202020
+    text_color_dark = "#CAD3F5"			    # default is #FFF
+
+    # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
+    # remark42 = true
+    # remark42_host = "https://yourhost.com"
+    # remark42_site_id = "your_site_id"
+
+    # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
+    # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
+                                          # this is also used in the schema output as well. Image is resized to max 1200x630
+                                          # For this to work though og_image and brand_url must be a path inside the assets directory
+                                          # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
+    # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
+
+[taxonomies]
+    series = 'series'
+    tags = 'tags'
