@@ -1,21 +1,21 @@
-baseURL = "http://mkramerpsych.com"
+baseURL = "http://makramer.tech"
 languageCode = "en-us"
 theme = "poison"
-paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    brand = "Max Kramer"                      # name of your site - appears in the sidebar
-    # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    brand_image = "/images/pro_image_sq.png"    # path to the image shown in the sidebar
+    brand = "Max Kramer"                                                        # name of your site - appears in the sidebar
+    # remote_brand_image = 'https://github.com/USERNAME.png'                    # path to a remote file
+    brand_image = "/images/pro_image_sq.png"                                    # path to the image shown in the sidebar
     description = "Data science, cognitive neuroscience, and audio engineering" # Used as default meta description if not specified in front matter
-    dark_mode = true                      # optional - defaults to false
-    favicon = "/favicon/favicon.ico"             # path to favicon (defaults to favicon.png)
+    dark_mode = true                                                            # optional - defaults to false
+    favicon = "/favicon/favicon.ico"                                            # path to favicon (defaults to favicon.png)
 
-    front_page_content = ["Posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
+    front_page_content = ["resume", "posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -24,8 +24,9 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+	{Name = "About Me", URL = "/about/", HasChildren = false},
+        {Name = "Resume", URL ="/resume/", HasChildren = false},
+	{Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
